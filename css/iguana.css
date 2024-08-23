@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+/**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 73px;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    padding: 7px 0;
+}
+
+.heroe img {
+    width: 100%;
+    height: 727px;
+}
+
+.texto_imagen {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 348px;
+}
+
+.texto_imagen p {
+    width: 475px;
+    height: 197px;
+    padding-top: 76px;
+    padding-bottom: 75px;
+}
+
+.texto_imagen img {
+    width: 399px;
+    height: 237px;
+    padding-top: 45px;
+    padding-right: 50px;
+}
+
+.caracteristicas {
+    background-color: #1E1A13;
+    height: 348px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caracteristicas h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-between;
+    font-size: 39px;
+    margin: 0 259px;
+}
+
+.iconos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconos i {
+    font-size: 50px;
+    margin: 0 150px;
+}
+
+.iconos span {
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 348px;
+}
+
+.galeria img {
+    width: 316px;
+    height: 202px;
+    padding-right: 16px;
+}
+
+footer {
+    background-color: #1E1A13;
+    height: 102px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 20px;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+/* font */
+
+.raleway-medium {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway-light {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}

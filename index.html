@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSiteTest</title>
+    <!--CSS de Boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--CSS Local llamado "main"-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Link jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Exam Page" style="width: 7%;" class="d-none d-md-block">
+          </a>
+          <button class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" >
+            <ul class="navbar-nav ms-auto roboto-condensed-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">HTML5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">JAVASCRIP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BOOSTRAP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">JQUERY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!--Header-->
+<header class="main-header mt-1">
+    <div class="background-overlay text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center justify-content-center align-self-center">
+                    <h1>El Libro del Examen final del Módulo 2</h1>
+                    <p>Éste ejemplar conduce al alumno hasta el conocimiento y el dominio de los lenguajes de diseño web, desde html 5 con hojas de estilo css y el uso de herramientas framework boostrap y la aplicación responsiva según los diversos distositivos...
+                    </p>
+                    <!--Boton para efecto de jquery-->
+                    <a href="#" class="btn btn-outline-secondary btn-lg text-white" id="btnleer">Leer mas...</a>
+                    <p id="texto"></p> <!--Texto de jquery-->
+                </div>
+                <div class="col-md-6">
+                    <img src="img/producto3.png" alt="Libro de Examen M2" class="img-fluid d-none d-md-block">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Hoja Informativa-->
+<section class="bg-dark text-white py-5">
+  <div class="container">
+    <h4 class="roboto-condensed-text">Recibe nuestras noticias de nuevos libros:</h4>
+    <form class="row needs-validation" novalidate>
+      <div class="col-md-4">
+        <input type="text" class="form-control form-control-lg" id="nameId" placeholder="Ingrese su nombre" required>
+        <div class="valid-feedback">
+          Ok
+        </div>
+        <div class="invalid-feedback">
+          Ingrese su nombre aquí.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <input type="email" class="form-control form-control-lg" id="idCorreo"  placeholder="Ingrese su Correo" required>
+        <div class="valid-feedback">
+          Ok
+        </div>
+        <div class="invalid-feedback">
+          Ingrese su correo antes de Suscribir.
+        </div>
+      </div>
+      <div class="col-md-4">
+        <button type="submit" class="btn btn-primary btn-lg btn-block">
+          Suscribir
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+<!--Caracteristicas-->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card text-center border-primary">
+          <div class="card-body">
+            <h3>Primero</h3>
+            <p class="text-primary">Introduccion al html 5, estructura basica y trabajo con etiq....</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center bg-primary text-white">
+          <div class="card-body">
+            <h3>Segundo</h3>
+            <p>Creando estilos sobre etiquetas con CSS en html.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center border-primary">
+          <div class="card-body">
+            <h3>Tercero</h3>
+            <p class="text-primary">Creación de contenido dinamico con javascript en html y css.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center bg-primary text-white">
+          <div class="card-body">
+            <h3>Cuarto</h3>
+            <p>Aplicación de diseños estilizados con boostrap con css y jquery en html.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Acerca de..-->
+<section class="bg-dark">
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-md-3">
+          <a href="iguana.html" class="btn btn-outline-secondary rounded-circle"> <span class=><img class="rounded-circle" src="img/iguanalink.png" style="width: 100%;" alt=""></span></a>
+      </div>
+      <div class="col-md-9 align-self-center text-white">
+        <h3>¿Por que destaca este libro?</h3>
+        <p>Porque tiene un capítulo completo referente a como se relacionan las iguanas y el codigo html5, presione la imagen para ver un ejemplo.</p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<!--Equipo de estudio-->
+<section class="team text-center">
+  <div class="container p-5">
+    <h1 class="">Equipo de Estudio</h1>
+    <p>Aquí se concentra el primer equipo de trabajo en el uso de boostrap en donde el participante del medio, solo dió jugo a sus compañeros, pero le en su defensa, daba jugo con entusiasmo. <i class="bi bi-emoji-smile-fill"></i></p>
+    <!--Miembros del equipo de estudio-->
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card" style="background-color: #e3f2fd;">
+          <div class="card-body">
+            <img src="img/person.png" class="img-fluid rounded-circle w-50" alt="Foto Alumno">
+            <h3>Felipe Villegas</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <div class="d-flex flex-row justify-content-center">
+              <a href="#"><i class="bi bi-facebook m-1"></i></a>
+              <a href="#"><i class="bi bi-whatsapp m-1"></i></a>
+              <a href="#"><i class="bi bi-github m-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card" style="background-color: #e3f2fd;">
+          <div class="card-body">
+            <img src="img/person.png" class="img-fluid rounded-circle w-50" alt="Foto Alumno">
+            <h3>Fabian Ordenes</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <div class="d-flex flex-row justify-content-center">
+              <a href="#"><i class="bi bi-facebook m-1"></i></a>
+              <a href="#"><i class="bi bi-whatsapp m-1"></i></a>
+              <a href="#"><i class="bi bi-github m-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card" style="background-color: #e3f2fd;">
+          <div class="card-body">
+            <img src="img/person.png" class="img-fluid rounded-circle w-50" alt="Foto Alumno">
+            <h3>Tomas Bravo</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+            <div class="d-flex flex-row justify-content-center">
+              <a href="#"><i class="bi bi-facebook m-1"></i></a>
+              <a href="#"><i class="bi bi-whatsapp m-1"></i></a>
+              <a href="#"><i class="bi bi-github m-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--Formulario de Contacto-->
+<section class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <h3>Contactanos</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <form action="" class="row needs-validation" novalidate>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend input-group-text">
+              <i class="bi bi-person-fill "></i>
+            </div>
+            <input type="text" class="form-control" placeholder="Nombre" id="idNombre" required>
+            <div class="valid-feedback">
+              Ok
+            </div>
+            <div class="invalid-feedback">
+              Ingrese su nombre aquí.
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend input-group-text">
+              <i class="bi bi-envelope-fill"></i>
+            </div>
+            <input type="email" class="form-control" placeholder="Correo" id="idMail" required>
+            <div class="valid-feedback">
+              Ok
+            </div>
+            <div class="invalid-feedback">
+              Ingrese su correo por favor.
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend input-group-text">
+              <i class="bi bi-pencil-fill"></i>
+            </div>
+            <textarea cols="30" rows="10" class="form-control" required></textarea>
+            <div class="valid-feedback">
+              Ok
+            </div>
+            <div class="invalid-feedback">
+              Escribenos tu mensaje aquí.
+            </div>
+          </div>
+          <button class="btn btn-primary btn-lg btn-block">
+            Envia tu Mensaje
+          </button>
+        </form>
+      </div>
+      <div class="col-lg-3 align-self-center">
+        <img src="img/Revisando.png" alt="Revisando tu correo" style="width: 60%;">
+      </div>
+    </div>
+  </div>
+</section>
+<!--Pie de Pagina-->
+<footer class="bg-dark navbar-dark text-white border-top text-center">
+  <div class="container p-3">
+    <p>Copyright &copy; 2024</p>
+
+  </div>
+</footer>
+    <!--JavaScrip de boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/rollover.js"></script>
+
+    
+</body>
+</html>
